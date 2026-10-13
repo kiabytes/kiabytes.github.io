@@ -599,6 +599,64 @@ textarea {
     font-size: 0.75rem;
 }
 
+/* Smooth scrolling for portfolio sections */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Prevent sticky navbar from covering section headings */
+.portfolio-sub-section h2[id] {
+    scroll-margin-top: 100px;
+}
+
+/* =========================
+   PORTFOLIO DROPDOWN
+========================= */
+
+.nav-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Hide dropdown by default */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 220px;
+    padding: 8px 0;
+
+    flex-direction: column;
+
+    background: #F7F1E8;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    z-index: 1001;
+}
+
+/* Show dropdown on hover or keyboard focus */
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+    display: flex;
+}
+
+/* Style individual dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 10px 16px;
+    white-space: nowrap;
+    font-size: 0.85rem;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(166, 181, 159, 0.2);
+    color: var(--accent-dark);
+}
 
 /* =========================================================
    PROJECT VISUALS
