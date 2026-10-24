@@ -4,62 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
 
     <title>Kiana Yeo | Portfolio</title>
 
+    <!-- SEO -->
+    <meta name="description"
+        content="Portfolio of Kiana Yeo, admin and operations support for digital creators and small online businesses: content planning, CRM, scheduling, email and file systems, and reporting.">
+    <link rel="canonical" href="https://kiabytes.github.io/kiana-yeo-portfolio/portfolio.html">
+
+    <!-- Open Graph / LinkedIn Preview -->
+    <meta property="og:title" content="Portfolio | Kiana Yeo">
+    <meta property="og:description"
+        content="Admin and operations support for digital creators and small online businesses: content planning, CRM, scheduling, organization systems, and reporting.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kiabytes.github.io/kiana-yeo-portfolio/portfolio.html">
+    <meta property="og:image" content="https://kiabytes.github.io/kiana-yeo-portfolio/images/portfolio-preview.jpg">
+    <meta property="og:image:alt" content="Preview of Kiana Yeo's portfolio website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="images/site-icon.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- SEO -->
-    <meta name="description" content="My website portfolio showcasing my projects and skills.">
-
-    <!-- Open Graph / LinkedIn Preview -->
-    <meta property="og:title" content="Kiana Yeo | Portfolio">
-    <meta property="og:description"
-        content="Kiana Yeo's portfolio showcasing virtual assistance, data management, research, administrative support, and web development projects.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kiabytes.github.io/kiana-yeo-portfolio/">
-    <meta property="og:image" content="https://kiabytes.github.io/kiana-yeo-portfolio/images/portfolio-preview.jpg">
-
 </head>
 
 <body>
 
+    <a class="skip-link" href="#portfolio">Skip to main content</a>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
     <header class="header">
         <div class="container nav-container">
 
-            <a href="index.html#home" class="logo">
-                Kiana Yeo
-            </a>
+            <a href="index.html#home" class="logo">Kiana Yeo</a>
 
-            <nav class="nav-links" aria-label="Main navigation">
+            <nav class="nav-links" id="main-nav" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="index.html#about">About</a>
                 <a href="index.html#services">Services</a>
-                <div class="nav-dropdown">
-                <a href="portfolio.html" class="dropdown-toggle">
-                    Portfolio
-                </a>
 
-                <div class="dropdown-menu">
-                    <a href="portfolio.html#section-1">Data &amp; Research</a>
-                    <a href="portfolio.html#section-2">Administrative Support</a>
-                    <a href="portfolio.html#section-3">Digital Business Support</a>
+                <div class="nav-dropdown">
+                    <a href="portfolio.html" class="dropdown-toggle" aria-current="page">Portfolio</a>
+
+                    <div class="dropdown-menu">
+                        <a href="portfolio.html#section-1">Creator &amp; Online Business Support</a>
+                        <a href="portfolio.html#section-2">Admin &amp; Operations Systems</a>
+                        <a href="portfolio.html#section-3">Data, Reporting &amp; Research</a>
+                    </div>
                 </div>
-            </div>
+
                 <a href="index.html#tools">Tools</a>
                 <a href="index.html#resume">Resume</a>
                 <a href="index.html#contact">Contact</a>
+                <a href="https://calendly.com/kianayeo15/30min" target="_blank" rel="noopener noreferrer" class="button button-primary nav-cta">Book a Call</a>
             </nav>
 
-            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="main-nav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -73,121 +82,94 @@
         <!-- =====================================================
              PORTFOLIO
         ====================================================== -->
-
-
         <section id="portfolio" class="portfolio section">
 
             <div class="container">
 
                 <div class="section-heading">
+                    <p class="eyebrow">FEATURED WORK</p>
 
-                    <p class="eyebrow">
-                        FEATURED WORK
-                    </p>
-
-                    <div class="section-title">
-                        Portfolio Projects
-                    </div>
+                    <h1 class="section-title">Portfolio Projects</h1>
 
                     <p>
-                        Explore practical projects demonstrating my skills in
-                        data management, administrative support, research,
-                        organization, and web development.
+                        Systems, workflows, and content support that keep creators and
+                        small online businesses organized, so they can focus on growing.
                     </p>
-                    <br>
+                    <p class="section-note">
+                        Projects 1–2 were created for Choyeo Digitals. Projects 3–10 use
+                        fictional sample data created for practice.
+                    </p>
                 </div>
 
+
                 <!-- =================================================
-                     PROJECT 1 — DATA CLEANING
+                     SECTION 1 — CREATOR & ONLINE BUSINESS SUPPORT
                 ================================================== -->
 
+                <section class="portfolio-sub-section">
+                    <h2 id="section-1">Creator &amp; Online Business Support</h2>
+                </section>
+
+                <!-- PROJECT 1 — SOCIAL MEDIA CONTENT PLANNING -->
                 <article class="project">
-                    <section class="portfolio-sub-section">
-                        <h2 id="section-1">Data &amp; Research</h2>
-                    </section>
 
                     <div class="project-info">
 
-                        <span class="project-number">
-                            01
-                        </span>
+                        <span class="project-number">01</span>
 
-                        <p class="project-category">
-                            DATA MANAGEMENT
-                        </p>
+                        <p class="project-category">SOCIAL MEDIA MANAGEMENT</p>
 
-                        <h3>
-                            Data Cleaning & Spreadsheet Organization
-                        </h3>
+                        <h3>Social Media Content Planning &amp; Management</h3>
 
                         <p>
-                            Cleaned and standardized a fictional
-                            customer contact database by removing
-                            duplicates, correcting inconsistent
-                            formatting, and organizing information
-                            into a usable spreadsheet.
+                            Built a multi-platform content plan in Notion for Choyeo Digitals,
+                            so every post has a clear platform, goal, and purpose before
+                            it is created.
                         </p>
 
                         <div class="project-tags">
-
-                            <span>Excel</span>
-                            <span>Data Cleaning</span>
-                            <span>Formatting</span>
-                            <span>Data Organization</span>
-
+                            <span>Content Planning</span>
+                            <span>Content Scheduling</span>
+                            <span>Social Media</span>
+                            <span>Notion</span>
                         </div>
 
                     </div>
-
 
                     <div class="project-visual">
 
-                        <!-- BEFORE -->
-
+                        <!-- CONTENT PLAN -->
                         <div class="showcase-item">
+                            <span class="showcase-label">CONTENT PLAN</span>
 
-                            <span class="showcase-label">
-                                BEFORE
-                            </span>
-
-                            <img src="images/data-cleaning-before.jpg"
-                                alt="Before screenshot of the unorganized customer database">
+                            <video src="videos/social-media-content-plan.mp4" autoplay muted loop playsinline
+                                preload="metadata"
+                                aria-label="Screen recording of a social media content plan in Notion">
+                            </video>
 
                             <p class="showcase-caption">
-                                <strong>Before:</strong>
-                                Messy and inconsistent customer data with
-                                duplicates, inconsistent formatting, and
-                                unorganized information.
+                                <strong>The plan:</strong>
+                                A Notion workspace that tracks each post by platform, content type,
+                                goal, product, creative direction, and call to action.
                             </p>
-
                         </div>
-
 
                         <div class="showcase-divider">
-                            <span>After Organization</span>
+                            <span>From Plan to Post</span>
                         </div>
 
-
-                        <!-- AFTER -->
-
+                        <!-- CONTENT IMPLEMENTATION -->
                         <div class="showcase-item">
+                            <span class="showcase-label">CONTENT IMPLEMENTATION</span>
 
-                            <span class="showcase-label">
-                                AFTER
-                            </span>
-
-                            <img src="images/data-cleaning-after.jpg"
-                                alt="After screenshot of the cleaned and organized customer database">
+                            <img src="images/social-media-content-implementation.png" loading="lazy" decoding="async"
+                                alt="Social media posts created from the Choyeo Digitals content plan">
 
                             <p class="showcase-caption">
-                                <strong>What I did:</strong>
-                                Removed duplicates, standardized formatting,
-                                organized the columns, added clear
-                                data checks for easier use, and created
-                                a table summary and graph analysis for
-                                easier interpretation.
+                                <strong>The result:</strong>
+                                Turned planned ideas into finished posts, adapting each one to its
+                                platform format, message, visuals, and call to action.
                             </p>
-
                         </div>
 
                     </div>
@@ -195,88 +177,63 @@
                 </article>
 
 
-                <!-- =================================================
-                     PROJECT 2 — SALES TRACKING
-                ================================================== -->
-
+                <!-- PROJECT 2 — SOCIAL MEDIA CONTENT CREATION -->
                 <article class="project project-reverse">
 
                     <div class="project-info">
 
-                        <span class="project-number">
-                            02
-                        </span>
+                        <span class="project-number">02</span>
 
-                        <p class="project-category">
-                            REPORTING
-                        </p>
+                        <p class="project-category">CONTENT CREATION</p>
 
-                        <h3>
-                            Sales Tracking & Reporting
-                        </h3>
+                        <h3>Social Media Graphic Design &amp; Content Creation</h3>
 
                         <p>
-                            Created a structured sales tracker to
-                            organize transaction data, calculate
-                            key metrics, and provide a quick
-                            monthly sales overview and additional
-                            insights.
+                            Designed branded graphics for Choyeo Digitals with clear messaging
+                            and a consistent look across social media platforms.
                         </p>
 
                         <div class="project-tags">
-
-                            <span>Excel</span>
-                            <span>Data Entry</span>
-                            <span>Formulas</span>
-                            <span>Reporting</span>
-
+                            <span>Canva</span>
+                            <span>Graphic Design</span>
+                            <span>Content Creation</span>
+                            <span>Branding</span>
                         </div>
 
                     </div>
 
+                    <div class="project-visual">
 
-                    <div class="project-visual image-showcase">
-
-                        <!-- SALES TRACKER -->
-
+                        <!-- DESIGN SAMPLES -->
                         <div class="showcase-item">
+                            <span class="showcase-label">SOCIAL MEDIA DESIGNS</span>
 
-                            <span class="showcase-label">
-                                SALES TRACKER
-                            </span>
-
-                            <img src="images/sales-tracker-sample.jpg"
-                                alt="Sales tracker spreadsheet showing organized transaction data">
+                            <img src="images/social-media-designs.png" loading="lazy" decoding="async"
+                                alt="Social media graphics created in Canva for Choyeo Digitals">
 
                             <p class="showcase-caption">
-                                <strong>What I created:</strong>
-                                Structured transaction data into a clean
-                                sales tracker with organized fields,
-                                calculated revenue, and consistent formatting.
+                                <strong>Designs:</strong>
+                                Educational posts, product promotions, and interactive content
+                                built in Canva with a consistent brand style.
                             </p>
-
                         </div>
 
+                        <div class="showcase-divider">
+                            <span>Product Promotion</span>
+                        </div>
 
-                        <!-- SALES REPORT -->
-
+                        <!-- PRODUCT CONTENT -->
                         <div class="showcase-item">
+                            <span class="showcase-label">PRODUCT CONTENT</span>
 
-                            <span class="showcase-label">
-                                SALES REPORT
-                            </span>
-
-                            <img src="images/sales-report-sample.jpg"
-                                alt="Sales report showing monthly sales metrics and analysis">
+                            <img src="images/social-media-product-content.png" loading="lazy" decoding="async"
+                                alt="Product promotional graphics created for Choyeo Digitals">
 
                             <p class="showcase-caption">
-                                <strong>What I created:</strong>
-                                Turned the sales data into a quick monthly
-                                report with key metrics, summaries, and
-                                visual insights for better understanding of
-                                sales performance.
+                                <strong>Product content:</strong>
+                                Promotional graphics that explain product benefits at a glance
+                                while staying true to the Choyeo Digitals brand.
                             </p>
-
                         </div>
 
                     </div>
@@ -284,86 +241,65 @@
                 </article>
 
 
-                <!-- =================================================
-                     PROJECT 3 — RESEARCH
-                ================================================== -->
-
+                <!-- PROJECT 3 — CRM CONTACT & LEAD MANAGEMENT -->
                 <article class="project">
 
                     <div class="project-info">
 
-                        <span class="project-number">
-                            03
-                        </span>
+                        <span class="project-number">03</span>
 
-                        <p class="project-category">
-                            RESEARCH
-                        </p>
+                        <p class="project-category">CRM &amp; CUSTOMER DATA</p>
 
-                        <h3>
-                            Internet Research & Competitor Analysis
-                        </h3>
+                        <h3>CRM Contact &amp; Lead Management</h3>
 
                         <p>
-                            Researched competing digital product
-                            businesses and organized relevant
-                            information into a comparison
-                            spreadsheet with key findings and
-                            recommendations.
+                            Set up and maintained a Zoho CRM with fictional practice data,
+                            keeping contacts and leads organized so follow-ups are not missed.
                         </p>
 
                         <div class="project-tags">
-
-                            <span>Internet Research</span>
-                            <span>Data Collection</span>
-                            <span>Excel</span>
-                            <span>Analysis</span>
-
+                            <span>Zoho CRM</span>
+                            <span>Contact Management</span>
+                            <span>Lead Tracking</span>
+                            <span>Customer Data</span>
                         </div>
 
                     </div>
 
+                    <div class="project-visual">
 
-                    <div class="project-visual image-showcase">
-
-                        <!-- RESEARCH -->
-
+                        <!-- CONTACT LIST -->
                         <div class="showcase-item">
+                            <span class="showcase-label">CONTACT MANAGEMENT</span>
 
-                            <span class="showcase-label">
-                                RESEARCH
-                            </span>
-
-                            <img src="images/internet-research-sample.jpg" alt="Internet research spreadsheet">
+                            <img src="images/zoho-crm-contacts.jpg" loading="lazy" decoding="async"
+                                alt="Zoho CRM contact list using fictional practice data">
 
                             <p class="showcase-caption">
-                                <strong>What I researched:</strong>
-                                Collected relevant product, pricing,
-                                category, and business information from
-                                fictional online sources.
+                                <strong>Contact list:</strong>
+                                Standardized contact details and lead statuses so the list is
+                                easy to filter, track, and follow up on.
                             </p>
-
                         </div>
 
+                        <div class="showcase-divider">
+                            <span>Contact Record &amp; Follow-Up</span>
+                        </div>
 
-                        <!-- COMPETITOR ANALYSIS -->
-
+                        <!-- INDIVIDUAL CONTACT -->
                         <div class="showcase-item">
+                            <span class="showcase-label">CRM RECORD</span>
 
-                            <span class="showcase-label">
-                                COMPETITOR ANALYSIS
-                            </span>
-
-                            <img src="images/competitor-analysis-sample.jpg" alt="Competitor analysis spreadsheet">
+                            <video src="videos/zoho-contact-record.mp4" autoplay muted loop playsinline
+                                preload="metadata"
+                                aria-label="Screen recording of a Zoho CRM contact record with deals, tasks, and follow-up emails">
+                            </video>
 
                             <p class="showcase-caption">
-                                <strong>What I did:</strong>
-                                Organized the findings into a comparison
-                                table to identify patterns, differences,
-                                and useful business insights. Provided additional
-                                key findings and recommendations as well.
+                                <strong>Contact record:</strong>
+                                Linked each contact to its products, deals, meetings, tasks,
+                                and follow-up email workflows in one place.
                             </p>
-
                         </div>
 
                     </div>
@@ -372,93 +308,70 @@
 
 
                 <!-- =================================================
-                     PROJECT 4 — EMAIL ORGANIZATION
+                     SECTION 2 — ADMIN & OPERATIONS SYSTEMS
                 ================================================== -->
 
-                <article class="project project-reverse">
+                <section class="portfolio-sub-section">
+                    <h2 id="section-2">Admin &amp; Operations Systems</h2>
+                </section>
 
-                    <section class="portfolio-sub-section">
-                        <h2 id="section-2">Administrative Support</h2>
-                    </section>
+                <!-- PROJECT 4 — EMAIL ORGANIZATION -->
+                <article class="project project-reverse">
 
                     <div class="project-info">
 
-                        <span class="project-number">
-                            04
-                        </span>
+                        <span class="project-number">04</span>
 
-                        <p class="project-category">
-                            ADMINISTRATION
-                        </p>
+                        <p class="project-category">ADMINISTRATION</p>
 
-                        <h3>
-                            Email Organization System
-                        </h3>
+                        <h3>Email Organization System</h3>
 
                         <p>
-                            Designed a simple inbox categorization
-                            system to make important messages easier
-                            to identify, prioritize, and manage.
+                            Built a simple inbox system that separates urgent messages from
+                            everything else, so important emails do not get buried.
                         </p>
 
                         <div class="project-tags">
-
                             <span>Email Management</span>
                             <span>Organization</span>
                             <span>Prioritization</span>
-
                         </div>
 
                     </div>
 
-
                     <div class="project-visual">
 
                         <!-- BEFORE -->
-
                         <div class="showcase-item">
+                            <span class="showcase-label">BEFORE</span>
 
-                            <span class="showcase-label">
-                                BEFORE
-                            </span>
-
-                            <img src="images/email-system-before.png"
-                                alt="Before screenshot of an unorganized email inbox">
+                            <img src="images/email-system-before.png" loading="lazy" decoding="async"
+                                alt="Unorganized email inbox with read and unread messages mixed together">
 
                             <p class="showcase-caption">
                                 <strong>Before:</strong>
-                                An unorganized inbox with read and unread
-                                messages mixed together, making important
-                                emails harder to identify and prioritize.
+                                Read and unread messages mixed together, with no clear way to
+                                tell what needs a reply first.
                             </p>
-
                         </div>
-
 
                         <div class="showcase-divider">
                             <span>After Organization</span>
                         </div>
 
-
                         <!-- AFTER -->
-
                         <div class="showcase-item">
+                            <span class="showcase-label">AFTER</span>
 
-                            <span class="showcase-label">
-                                AFTER
-                            </span>
-
-                            <img src="images/email-system-after.png" alt="After screenshot of an organized email inbox">
+                            <img src="images/email-system-after.png" loading="lazy" decoding="async"
+                                alt="Organized email inbox sorted by priority and purpose">
 
                             <p class="showcase-caption">
-                                <strong>What I did:</strong>
-                                Created a simple categorization system
-                                to separate messages by priority and
-                                purpose for easier inbox management.
-                                Archived low-priority emails for a clean inbox view,
-                                and remained high-priority messages in the main inbox for quick access.
+                                <strong>After:</strong>
+                                Sorted messages by priority and purpose, archived low-priority
+                                emails, and kept high-priority ones in the main inbox for
+                                quick access.
                             </p>
-
                         </div>
 
                     </div>
@@ -466,91 +379,66 @@
                 </article>
 
 
-                <!-- =================================================
-                     PROJECT 5 — CALENDAR
-                ================================================== -->
-
+                <!-- PROJECT 5 — CALENDAR -->
                 <article class="project">
 
                     <div class="project-info">
 
-                        <span class="project-number">
-                            05
-                        </span>
+                        <span class="project-number">05</span>
 
-                        <p class="project-category">
-                            SCHEDULING
-                        </p>
+                        <p class="project-category">SCHEDULING</p>
 
-                        <h3>
-                            Calendar & Scheduling Management
-                        </h3>
+                        <h3>Calendar &amp; Scheduling Management</h3>
 
                         <p>
-                            Created a weekly scheduling system for
-                            a fictional client, organizing meetings,
-                            deadlines, and administrative tasks while
-                            preventing scheduling conflicts.
+                            Designed a weekly schedule for a fictional client that organizes
+                            meetings, deadlines, and admin tasks without conflicts.
                         </p>
 
                         <div class="project-tags">
-
                             <span>Google Calendar</span>
                             <span>Scheduling</span>
                             <span>Organization</span>
-
                         </div>
 
                     </div>
 
-
                     <div class="project-visual">
 
                         <!-- BEFORE -->
-
                         <div class="showcase-item">
+                            <span class="showcase-label">BEFORE</span>
 
-                            <span class="showcase-label">
-                                BEFORE
-                            </span>
-
-                            <video src="videos/before-calendar-sample.mp4" autoplay muted loop playsinline>
+                            <video src="videos/before-calendar-sample.mp4" autoplay muted loop playsinline
+                                preload="metadata"
+                                aria-label="Screen recording of a cluttered weekly calendar with overlapping events">
                             </video>
 
                             <p class="showcase-caption">
                                 <strong>Before:</strong>
-                                A cluttered weekly schedule with overlapping
-                                commitments, inconsistent event organization,
-                                and limited focus time.
+                                Overlapping commitments, inconsistent event organization,
+                                and little time left for focused work.
                             </p>
-
                         </div>
-
 
                         <div class="showcase-divider">
                             <span>After Organization</span>
                         </div>
 
-
                         <!-- AFTER -->
-
                         <div class="showcase-item">
+                            <span class="showcase-label">AFTER</span>
 
-                            <span class="showcase-label">
-                                AFTER
-                            </span>
-
-                            <video src="videos/after-calendar-sample.mp4" autoplay muted loop playsinline>
+                            <video src="videos/after-calendar-sample.mp4" autoplay muted loop playsinline
+                                preload="metadata"
+                                aria-label="Screen recording of a reorganized, color-coded weekly calendar with no conflicts">
                             </video>
 
                             <p class="showcase-caption">
-                                <strong>What I did:</strong>
-                                Reorganized events, resolved scheduling
-                                conflicts, color-coded events and tasks for
-                                easier distinction, and created a more balanced
-                                weekly schedule.
+                                <strong>After:</strong>
+                                Resolved conflicts, color-coded events and tasks by type, and
+                                balanced the week to leave room for focused work.
                             </p>
-
                         </div>
 
                     </div>
@@ -558,89 +446,66 @@
                 </article>
 
 
-                <!-- =================================================
-                     PROJECT 6 — FILE MANAGEMENT
-                ================================================== -->
-
+                <!-- PROJECT 6 — FILE MANAGEMENT -->
                 <article class="project project-reverse">
 
                     <div class="project-info">
 
-                        <span class="project-number">
-                            06
-                        </span>
+                        <span class="project-number">06</span>
 
-                        <p class="project-category">
-                            FILE MANAGEMENT
-                        </p>
+                        <p class="project-category">FILE MANAGEMENT</p>
 
-                        <h3>
-                            Digital File Organization
-                        </h3>
+                        <h3>Digital File Organization</h3>
 
                         <p>
-                            Reorganized a fictional client's digital
-                            files using a clear folder hierarchy and
-                            consistent naming convention.
+                            Reorganized a fictional client’s files with a clear folder
+                            hierarchy and a consistent naming convention.
                         </p>
 
                         <div class="project-tags">
-
                             <span>File Management</span>
                             <span>Organization</span>
                             <span>Documentation</span>
-
                         </div>
 
                     </div>
 
-
                     <div class="project-visual">
 
                         <!-- BEFORE -->
-
                         <div class="showcase-item">
+                            <span class="showcase-label">BEFORE</span>
 
-                            <span class="showcase-label">
-                                BEFORE
-                            </span>
-
-                            <video src="videos/before-file-organization-sample.mp4" autoplay muted loop playsinline>
+                            <video src="videos/before-file-organization-sample.mp4" autoplay muted loop playsinline
+                                preload="metadata"
+                                aria-label="Screen recording of scattered files with inconsistent names">
                             </video>
 
                             <p class="showcase-caption">
                                 <strong>Before:</strong>
-                                Files were scattered across folders with
-                                inconsistent names and no clear organizational
-                                structure.
+                                Files scattered across folders with inconsistent names,
+                                making documents hard to find.
                             </p>
-
                         </div>
-
 
                         <div class="showcase-divider">
                             <span>After Organization</span>
                         </div>
 
-
                         <!-- AFTER -->
-
                         <div class="showcase-item">
+                            <span class="showcase-label">AFTER</span>
 
-                            <span class="showcase-label">
-                                AFTER
-                            </span>
-
-                            <video src="videos/after-file-organization-sample.mp4" autoplay muted loop playsinline>
+                            <video src="videos/after-file-organization-sample.mp4" autoplay muted loop playsinline
+                                preload="metadata"
+                                aria-label="Screen recording of files organized into a clear folder hierarchy">
                             </video>
 
                             <p class="showcase-caption">
-                                <strong>What I did:</strong>
-                                Created a clear folder hierarchy, grouped
-                                related files, and applied consistent
-                                naming conventions for easier navigation.
+                                <strong>After:</strong>
+                                Created a folder hierarchy, grouped related files, and applied
+                                consistent names so everything is easy to find and share.
                             </p>
-
                         </div>
 
                     </div>
@@ -648,384 +513,267 @@
                 </article>
 
 
-                <!-- =================================================
-                     PROJECT 7 — DOCUMENT FORMATTING
-                ================================================== -->
-
+                <!-- PROJECT 7 — DOCUMENT FORMATTING -->
                 <article class="project">
 
                     <div class="project-info">
 
-                        <span class="project-number">
-                            07
-                        </span>
+                        <span class="project-number">07</span>
 
-                        <p class="project-category">
-                            DOCUMENTATION
-                        </p>
+                        <p class="project-category">DOCUMENTATION</p>
 
-                        <h3>
-                            Document Formatting
-                        </h3>
+                        <h3>Document Formatting</h3>
 
                         <p>
-                            Transformed an unstructured document
-                            proposal with inconsistent formatting
-                            into a clean, professional proposal
-                            with organized sections and clean formatting.
+                            Turned an unstructured business proposal into a clean,
+                            professional document that is easy to scan and review.
                         </p>
 
                         <div class="project-tags">
-
                             <span>Microsoft Word</span>
                             <span>Formatting</span>
                             <span>Documentation</span>
-
                         </div>
 
                     </div>
 
-
                     <div class="project-visual">
 
                         <!-- BEFORE -->
-
                         <div class="showcase-item">
+                            <span class="showcase-label">BEFORE</span>
 
-                            <span class="showcase-label">
-                                BEFORE
-                            </span>
-
-                            <video src="videos/before-document-proposal-sample.mp4" autoplay muted loop playsinline>
+                            <video src="videos/before-document-proposal-sample.mp4" autoplay muted loop playsinline
+                                preload="metadata"
+                                aria-label="Screen recording of an unformatted business proposal document">
                             </video>
 
                             <p class="showcase-caption">
                                 <strong>Before:</strong>
-                                Unstructured business proposal with inconsistent
-                                formatting and information that was difficult
-                                to scan quickly.
+                                Inconsistent formatting and no clear sections, so key
+                                information was hard to find.
                             </p>
-
                         </div>
-
 
                         <div class="showcase-divider">
                             <span>After Formatting</span>
                         </div>
 
-
                         <!-- AFTER -->
-
                         <div class="showcase-item">
+                            <span class="showcase-label">AFTER</span>
 
-                            <span class="showcase-label">
-                                AFTER
-                            </span>
-
-                            <video src="videos/after-document-proposal-sample.mp4" autoplay muted loop playsinline>
+                            <video src="videos/after-document-proposal-sample.mp4" autoplay muted loop playsinline
+                                preload="metadata"
+                                aria-label="Screen recording of a professionally formatted business proposal with tables">
                             </video>
 
                             <p class="showcase-caption">
-                                <strong>What I did:</strong>
-                                Structured the information into clear
-                                sections, improved formatting, and created
-                                tables for easier review and quick scanning.
+                                <strong>After:</strong>
+                                Organized the content into clear sections, applied consistent
+                                formatting, and added tables for quick review.
                             </p>
-
                         </div>
 
                     </div>
 
                 </article>
 
+
                 <!-- =================================================
-                    PROJECT 8 — SOCIAL MEDIA CONTENT PLANNING
+                     SECTION 3 — DATA, REPORTING & RESEARCH
                 ================================================== -->
 
+                <section class="portfolio-sub-section">
+                    <h2 id="section-3">Data, Reporting &amp; Research</h2>
+                </section>
+
+                <!-- PROJECT 8 — DATA CLEANING -->
                 <article class="project project-reverse">
-
-                    <!-- SECTION HEADER -->
-
-                    <section class="portfolio-sub-section">
-                        <h2 id="section-3">Digital Business Support</h2>
-                    </section>
-
-
-                    <!-- PROJECT INFO -->
 
                     <div class="project-info">
 
-                        <span class="project-number">
-                            08
-                        </span>
+                        <span class="project-number">08</span>
 
-                        <p class="project-category">
-                            SOCIAL MEDIA MANAGEMENT
-                        </p>
+                        <p class="project-category">DATA MANAGEMENT</p>
 
-                        <h3>
-                            Social Media Content Planning &amp; Management
-                        </h3>
+                        <h3>Data Cleaning &amp; Spreadsheet Organization</h3>
 
                         <p>
-                            Developed and organized a multi-platform content
-                            plan for Choyeo Digitals in Notion to coordinate content ideas
-                            and scheduling for different social media platforms.
+                            Cleaned a fictional customer contact database so it is accurate,
+                            consistent, and ready to use.
                         </p>
 
                         <div class="project-tags">
-
-                            <span>Content Planning</span>
-                            <span>Content Scheduling</span>
-                            <span>Social Media</span>
-                            <span>Notion</span>
-
+                            <span>Excel</span>
+                            <span>Data Cleaning</span>
+                            <span>Formatting</span>
+                            <span>Data Organization</span>
                         </div>
 
                     </div>
-
-
-                    <!-- PROJECT VISUAL -->
 
                     <div class="project-visual">
 
-                        <!-- CONTENT PLAN -->
-
+                        <!-- BEFORE -->
                         <div class="showcase-item">
+                            <span class="showcase-label">BEFORE</span>
 
-                            <span class="showcase-label">
-                                CONTENT PLAN
-                            </span>
-
-                            <video src="videos/social-media-content-plan.mp4" autoplay muted loop playsinline>
-                            </video>
+                            <img src="images/data-cleaning-before.jpg" loading="lazy" decoding="async"
+                                alt="Spreadsheet of customer contacts with duplicate rows and inconsistent formatting">
 
                             <p class="showcase-caption">
-                                <strong>Content Planning:</strong>
-                                Organized social media content by platform,
-                                content type, goal, product, creative direction,
-                                and CTA using Notion.
+                                <strong>Before:</strong>
+                                Duplicate entries, inconsistent formatting, and disorganized
+                                columns.
                             </p>
-
                         </div>
-
 
                         <div class="showcase-divider">
-                            <span>Multi-Platform Planning</span>
+                            <span>After Organization</span>
                         </div>
 
-
-                        <!-- CONTENT IMPLEMENTATION -->
-
+                        <!-- AFTER -->
                         <div class="showcase-item">
+                            <span class="showcase-label">AFTER</span>
 
-                            <span class="showcase-label">
-                                CONTENT IMPLEMENTATION
-                            </span>
-
-                            <img src="images/social-media-content-implementation.png"
-                                alt="Social media content created and implemented from the Choyeo Digitals content plan">
+                            <img src="images/data-cleaning-after.jpg" loading="lazy" decoding="async"
+                                alt="Cleaned customer database with organized columns, a summary table, and a chart">
 
                             <p class="showcase-caption">
-                                <strong>What I implemented:</strong>
-                                Turned planned content ideas into actual social media
-                                posts, adapting each piece to its intended format,
-                                message, visual direction, and call to action.
+                                <strong>After:</strong>
+                                Removed duplicates, standardized formatting, organized columns,
+                                added data checks, and built a summary table and chart to make
+                                the data easier to interpret.
                             </p>
-
                         </div>
 
+                    </div>
 
+                </article>
 
-                        <!-- =================================================
-                     PROJECT 9 — SOCIAL MEDIA CONTENT CREATION
-                ================================================== -->
 
-                        <article class="project">
+                <!-- PROJECT 9 — SALES TRACKING -->
+                <article class="project">
 
-                            <div class="project-info">
+                    <div class="project-info">
 
-                                <span class="project-number">
-                                    09
-                                </span>
+                        <span class="project-number">09</span>
 
-                                <p class="project-category">
-                                    CONTENT CREATION
-                                </p>
+                        <p class="project-category">REPORTING</p>
 
-                                <h3>
-                                    Social Media Graphic Design &amp; Content Creation
-                                </h3>
+                        <h3>Sales Tracking &amp; Reporting</h3>
 
-                                <p>
-                                    Created branded social media graphics and promotional
-                                    content for Choyeo Digitals, combining clear messaging,
-                                    consistent visual design, and product-focused content
-                                    for different social media platforms.
-                                </p>
+                        <p>
+                            Built a sales tracker that turns raw transactions into a monthly
+                            report, so a small shop owner can see how sales are performing
+                            at a glance.
+                        </p>
 
-                                <div class="project-tags">
-
-                                    <span>Canva</span>
-                                    <span>Graphic Design</span>
-                                    <span>Content Creation</span>
-                                    <span>Branding</span>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="project-visual">
-
-                                <!-- DESIGN SAMPLES -->
-
-                                <div class="showcase-item">
-
-                                    <span class="showcase-label">
-                                        SOCIAL MEDIA DESIGNS
-                                    </span>
-
-                                    <img src="images/social-media-designs.png"
-                                        alt="Social media graphics created in Canva for Choyeo Digitals">
-
-                                    <p class="showcase-caption">
-                                        <strong>Content Creation:</strong>
-                                        Designed social media graphics including
-                                        educational posts, product promotions,
-                                        interactive content, and branded visuals
-                                        using Canva.
-                                    </p>
-
-                                </div>
-
-
-                                <div class="showcase-divider">
-                                    <span>Product Promotion</span>
-                                </div>
-
-
-                                <!-- PRODUCT CONTENT -->
-
-                                <div class="showcase-item">
-
-                                    <span class="showcase-label">
-                                        PRODUCT CONTENT
-                                    </span>
-
-                                    <img src="images/social-media-product-content.png"
-                                        alt="Product promotional graphics created for Choyeo Digitals">
-
-                                    <p class="showcase-caption">
-                                        <strong>What I focused on:</strong>
-                                        Created visually consistent content that
-                                        communicates product benefits clearly while
-                                        maintaining Choyeo Digitals' brand identity
-                                        across social media.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </article>
-
-
-
-                        <!-- =================================================
-                    PROJECT 10 — CRM CONTACT & LEAD MANAGEMENT
-                ================================================== -->
-
-                        <article class="project project-reverse">
-
-                            <div class="project-info">
-
-                                <span class="project-number">
-                                    10
-                                </span>
-
-                                <p class="project-category">
-                                    CRM &amp; CUSTOMER DATA
-                                </p>
-
-                                <h3>
-                                    CRM Contact &amp; Lead Management
-                                </h3>
-
-                                <p>
-                                    Practiced organizing and managing customer information
-                                    using Zoho CRM, including maintaining contact records,
-                                    updating lead information, and organizing details for
-                                    easier follow-up and customer management.
-                                </p>
-
-                                <div class="project-tags">
-                                    <span>Zoho CRM</span>
-                                    <span>Contact Management</span>
-                                    <span>Lead Tracking</span>
-                                    <span>Customer Data</span>
-                                </div>
-
-                            </div>
-
-
-                            <div class="project-visual">
-
-                                <!-- CONTACT LIST -->
-
-                                <div class="showcase-item">
-
-                                    <span class="showcase-label">
-                                        CONTACT MANAGEMENT
-                                    </span>
-
-                                    <img src="images/zoho-crm-contacts.jpg"
-                                        alt="Zoho CRM contact management list using fictional practice data">
-
-                                    <p class="showcase-caption">
-
-                                        <strong>Contact Organization:</strong>
-                                        Organized fictional customer records in Zoho CRM,
-                                        maintaining consistent contact details and lead
-                                        statuses for easier tracking and follow-up.
-
-                                    </p>
-
-                                </div>
-
-
-                                <div class="showcase-divider">
-                                    <span>Contact Record &amp; Follow-Up</span>
-                                </div>
-
-
-                                <!-- INDIVIDUAL CONTACT -->
-
-                                <div class="showcase-item">
-
-                                    <span class="showcase-label">
-                                        CRM RECORD
-                                    </span>
-
-                                    <video src="videos/zoho-contact-record.mp4" autoplay muted loop
-                                        playsinline>
-                                    </video>
-
-                                    <p class="showcase-caption">
-
-                                        <strong>CRM Workflow:</strong>
-                                        Organized the contact record with products, deals, meetings,
-                                        cadences, tasks, and follow-up email workflows.
-
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </article>
+                        <div class="project-tags">
+                            <span>Excel</span>
+                            <span>Data Entry</span>
+                            <span>Formulas</span>
+                            <span>Reporting</span>
+                        </div>
 
                     </div>
+
+                    <div class="project-visual image-showcase">
+
+                        <!-- SALES TRACKER -->
+                        <div class="showcase-item">
+                            <span class="showcase-label">SALES TRACKER</span>
+
+                            <img src="images/sales-tracker-sample.jpg" loading="lazy" decoding="async"
+                                alt="Sales tracker spreadsheet with organized transaction data and calculated revenue">
+
+                            <p class="showcase-caption">
+                                <strong>Tracker:</strong>
+                                Organized transactions into structured fields with consistent
+                                formatting and calculated revenue.
+                            </p>
+                        </div>
+
+                        <!-- SALES REPORT -->
+                        <div class="showcase-item">
+                            <span class="showcase-label">SALES REPORT</span>
+
+                            <img src="images/sales-report-sample.jpg" loading="lazy" decoding="async"
+                                alt="Monthly sales report showing key metrics, summaries, and charts">
+
+                            <p class="showcase-caption">
+                                <strong>Report:</strong>
+                                Summarized the data into a monthly report with key metrics,
+                                tables, and charts that highlight sales performance.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 10 — RESEARCH -->
+                <article class="project project-reverse">
+
+                    <div class="project-info">
+
+                        <span class="project-number">10</span>
+
+                        <p class="project-category">RESEARCH</p>
+
+                        <h3>Internet Research &amp; Competitor Analysis</h3>
+
+                        <p>
+                            Researched competing digital product businesses and compared them
+                            side by side to surface patterns, gaps, and recommendations.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Internet Research</span>
+                            <span>Data Collection</span>
+                            <span>Excel</span>
+                            <span>Analysis</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-visual image-showcase">
+
+                        <!-- RESEARCH -->
+                        <div class="showcase-item">
+                            <span class="showcase-label">RESEARCH</span>
+
+                            <img src="images/internet-research-sample.jpg" loading="lazy" decoding="async"
+                                alt="Spreadsheet of researched product, pricing, and category information">
+
+                            <p class="showcase-caption">
+                                <strong>Research:</strong>
+                                Gathered product, pricing, category, and business details from
+                                fictional online sources into one spreadsheet.
+                            </p>
+                        </div>
+
+                        <!-- COMPETITOR ANALYSIS -->
+                        <div class="showcase-item">
+                            <span class="showcase-label">COMPETITOR ANALYSIS</span>
+
+                            <img src="images/competitor-analysis-sample.jpg" loading="lazy" decoding="async"
+                                alt="Competitor comparison table with key findings and recommendations">
+
+                            <p class="showcase-caption">
+                                <strong>Analysis:</strong>
+                                Compared competitors in one table, highlighted key differences
+                                and patterns, and added findings with recommendations.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
 
         </section>
 
@@ -1034,39 +782,24 @@
     <!-- =====================================================
          FOOTER
     ====================================================== -->
-
     <footer class="footer">
 
         <div class="container footer-container">
 
             <div>
-
-                <a href="index.html#home" class="logo">
-                    Kiana Yeo
-                </a>
-
-                <p>
-                    Virtual Assistant & Administrative Support
-                </p>
-
+                <a href="index.html#home" class="logo">Kiana Yeo</a>
+                <p>Admin &amp; Operations Support for Digital Creators and Small Online Businesses</p>
             </div>
 
-
             <div class="footer-links">
-
                 <a href="index.html#home">Home</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="index.html#contact">Contact</a>
-                <a href="https://www.linkedin.com/in/kiana-yeo-a84070275/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
-                </a>
-
+                <a href="https://www.linkedin.com/in/kiana-yeo-a84070275/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
             </div>
 
-
-            <p class="copyright">
-                © 2026 Kiana Yeo. All rights reserved.
-            </p>
+            <p class="copyright">&copy; 2026 Kiana Yeo. All rights reserved.</p>
 
         </div>
 
@@ -1077,16 +810,27 @@
         const navLinks = document.querySelector(".nav-links");
 
         if (menuToggle && navLinks) {
+            const setMenu = (open) => {
+                navLinks.classList.toggle("open", open);
+                menuToggle.setAttribute("aria-expanded", String(open));
+                menuToggle.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+            };
+
             menuToggle.addEventListener("click", () => {
-                const isOpen = navLinks.classList.toggle("open");
-                menuToggle.setAttribute("aria-expanded", isOpen);
+                setMenu(!navLinks.classList.contains("open"));
             });
 
-            navLinks.querySelectorAll("a").forEach(link => {
-                link.addEventListener("click", () => {
-                    navLinks.classList.remove("open");
-                    menuToggle.setAttribute("aria-expanded", "false");
-                });
+            // Close the menu after choosing a link
+            navLinks.querySelectorAll("a").forEach((link) => {
+                link.addEventListener("click", () => setMenu(false));
+            });
+
+            // Close the menu with the Escape key
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape" && navLinks.classList.contains("open")) {
+                    setMenu(false);
+                    menuToggle.focus();
+                }
             });
         }
     </script>
