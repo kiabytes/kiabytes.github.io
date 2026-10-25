@@ -221,10 +221,14 @@ textarea:focus-visible {
     border: none;
     background: none;
     cursor: pointer;
+    color: var(--text);
 }
 
 .menu-button {
     font-size: 1.5rem;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: var(--radius-small);
 }
 
 .menu-toggle {
@@ -1342,7 +1346,8 @@ main > .section-heading > p:not(.eyebrow) {
         padding: 80px 0;
     }
 
-    /* Navigation */
+    /* Navigation: hamburger opens a dropdown panel
+       (same look as the Portfolio dropdown and the contact form menu) */
 
     .header .nav-container {
         min-height: 68px;
@@ -1356,15 +1361,21 @@ main > .section-heading > p:not(.eyebrow) {
     .nav-links {
         display: none;
         position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 14px 5% 18px;
+        top: calc(100% + 6px);
+        right: 5%;
+        z-index: 1001;
+
+        width: min(280px, 90vw);
+        padding: 8px 0;
+
         flex-direction: column;
-        align-items: flex-start;
-        background: var(--background);
-        border-bottom: 1px solid var(--border);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        align-items: stretch;
+        gap: 0;
+
+        background: #F7F1E8;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     }
 
     .nav-links.open {
@@ -1372,38 +1383,55 @@ main > .section-heading > p:not(.eyebrow) {
     }
 
     .nav-links a {
+        display: block;
         width: 100%;
-        padding: 11px 0;
+        padding: 10px 16px;
+        font-size: 0.9rem;
     }
+
+    .nav-links a:hover {
+        background: rgba(166, 181, 159, 0.2);
+        color: var(--accent-dark);
+    }
+
+    /* Portfolio sub-links sit inside the same panel, indented */
 
     .nav-dropdown {
         width: 100%;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
     .dropdown-menu {
         display: flex;
         position: static;
         min-width: 0;
-        padding: 0 0 0 14px;
+        padding: 0 0 4px;
         border: 0;
-        border-left: 2px solid var(--accent);
         border-radius: 0;
         background: transparent;
         box-shadow: none;
     }
 
     .dropdown-menu a {
-        padding: 8px 0;
+        padding: 8px 16px 8px 32px;
+        font-size: 0.82rem;
+        white-space: normal;
         color: var(--text-light);
     }
 
     .nav-links .nav-cta {
-        width: 100%;
-        margin-top: 10px;
-        padding: 13px 24px;
+        display: flex;
+        width: calc(100% - 32px);
+        margin: 8px 16px;
+        padding: 12px 24px;
         font-size: 0.9rem;
+        color: var(--white);
+    }
+
+    .nav-links .nav-cta:hover {
+        background: var(--accent-dark);
+        color: var(--white);
     }
 
     /* Hero */

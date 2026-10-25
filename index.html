@@ -44,7 +44,7 @@
                 Kiana Yeo
             </a>
 
-            <nav class="nav-links" aria-label="Main navigation">
+            <nav class="nav-links" id="main-nav" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="index.html#about">About</a>
                 <a href="index.html#services">Services</a>
@@ -66,9 +66,8 @@
             </nav>
 
             <!-- Mobile menu button -->
-            <button class="menu-button" aria-label="Open menu">
-                ☰
-            </button>
+            <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="main-nav">☰</button>
 
         </div>
 
@@ -1070,6 +1069,48 @@
 
     </footer>
 
+    <!-- Mobile menu toggle -->
+    <script>
+        (function () {
+            const button = document.querySelector(".menu-button");
+            const nav = document.getElementById("main-nav");
+            if (!button || !nav) return;
+
+            const setOpen = (open) => {
+                nav.classList.toggle("open", open);
+                button.setAttribute("aria-expanded", open);
+                button.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+                button.textContent = open ? "✕" : "☰";
+            };
+
+            button.addEventListener("click", (e) => {
+                e.stopPropagation();
+                setOpen(!nav.classList.contains("open"));
+            });
+
+            // Close after tapping any link in the menu
+            nav.addEventListener("click", (e) => {
+                if (e.target.closest("a")) setOpen(false);
+            });
+
+            // Close when tapping outside the menu
+            document.addEventListener("click", (e) => {
+                if (!nav.contains(e.target) && !button.contains(e.target)) setOpen(false);
+            });
+
+            // Close with Escape
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") setOpen(false);
+            });
+
+            // Reset when resizing up to the desktop layout
+            window.matchMedia("(min-width: 651px)").addEventListener("change", (e) => {
+                if (e.matches) setOpen(false);
+            });
+        })();
+    </script>
+
+    <!-- Contact form custom dropdown -->
     <script>
         (function () {
             const select = document.querySelector(".custom-select");
